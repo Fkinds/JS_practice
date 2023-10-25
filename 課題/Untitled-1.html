@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>textareaタグを使って複数行の入力フォームを作ろう!</title>
+    <style>
+        body {
+            padding: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="ninja.php" method="past">
+        <dt>お問い合わせ</dt>
+        <dd>
+            <label><input type="checkbox" name="category" value="お問い合わせ">お問い合わせ</label>
+            <label><input type="checkbox" name="category" value="新規お申し込み">新規申し込み</label>
+            <label><input type="checkbox" name="category" value="資料請求">資料請求</label>
+        </dd>
+        <dt>お名前<span class="must">※</span></dt>
+        <dd>
+            <input type="text" name="name" placeholder="忍者 太郎">
+        </dd>
+        <dt>ふりがな<span class="must">※</span></dt>
+        <dd>
+            <input type="text" name="name" placeholder="にんじゃ　たろう">
+        </dd>
+        <dt>メールアドレス<span class="must">※</span> </dt>
+        <dd>
+            <input type="text" name="email" placeholder="ninjacade@test.com">
+        </dd>
+        <dt>電話番号<span class="must">※</span></dt>
+        <dd>
+            <input type="text" name="tel" placeholder="0312345678">
+        </dd>
+        <dt>性別</dt>
+        <dd>
+            <label><input type="radio" name="gender" value="男性">男性</label>
+            <label><input type="radio" name="gender" value="女性">女性</label>
+        </dd>
+        <dt>当サイトをお知りになったきっかけ</dt>
+        <dd>
+            <select name="how">
+                <option value="ホームページ">ホームページ</option>
+                <option value="SNS">SNS</option>
+                <option value="広告">広告</option>
+            </select>
+        </dd>
+        <dt>お問い合わせ<span class="must">※</span></dt>
+        <dd>
+            <textarea name="query" clos="30" rows="5" required></textarea>
+        </dd>
+        <button type="submit" name="submit">送信する</button>
+    </form>
+</body>
+
+</html>
